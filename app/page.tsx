@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <ReactLenis root>
       <main className={`${montserrat.className}min-h-screen bg-white`}>
+        <HeroSection epilogue={epilogue} />
     </main>
     </ReactLenis>
   );
