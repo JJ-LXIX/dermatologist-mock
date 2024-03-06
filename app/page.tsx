@@ -12,7 +12,9 @@ export default function Home() {
     <ReactLenis root>
       <main className={`${montserrat.className}min-h-screen bg-white`}>
         <HeroSection epilogue={epilogue} />
-    </main>
+        <About epilogue={epilogue} />
+        <div className="h-screen w-full"></div>
+      </main>
     </ReactLenis>
   );
 }
