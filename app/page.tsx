@@ -3,6 +3,9 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import About from "@/components/About/About";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import { Epilogue, Montserrat } from "next/font/google";
+import Services from "@/components/Services/Services";
+import Team from "@/components/Team/Team";
+import Testimonial from "@/components/TestimonialSection/Testimonial";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 const epilogue = Epilogue({ subsets: ["latin"] });
@@ -13,7 +16,9 @@ export default function Home() {
       <main className={`${montserrat.className}min-h-screen bg-white`}>
         <HeroSection epilogue={epilogue} />
         <About epilogue={epilogue} />
-        <div className="h-screen w-full"></div>
+        <Services epilogue={epilogue} />
+        <Team epilogue={epilogue} />
+        <Testimonial />
       </main>
     </ReactLenis>
   );
